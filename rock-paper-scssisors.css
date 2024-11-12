@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+img {
+  width: 130px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  background: none;
+  border: 3px solid white;
+  border-radius: 100px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: white;
+  border-color: yellow;
+}
+
+.js-picks,
+.js-score,
+.js-result {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  color: white;
+}
+
+.js-result {
+  font-size: 25px;
+}
+
+.js-picks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  background-color: white;
+  padding: 8px 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+.reset-btn:hover {
+  background-color: yellow;
+}
+
+.reset-btn:active {
+  background-color: rgb(157, 157, 79);
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.js-result,
+.js-picks,
+.js-score {
+  width: 100%;
+  text-align: center;
+}
+
+/* small screens */
+@media (max-width: 570px) {
+  body {
+    padding: 10px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .small-image {
+    width: 50px;
+  }
+
+  .btn {
+    padding: 12px;
+    margin: 5px;
+  }
+
+  .js-result {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .reset-btn {
+    padding: 8px 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .btn img {
+    width: 70px;
+  }
+
+  .js-score,
+  .js-result,
+  .js-picks {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .js-score {
+    margin-top: 15px;
+  }
+}

@@ -37,10 +37,27 @@ function playGame(playerMove) {
 
   if (result === "אתה ניצחת") {
     score.wins += 1;
+    const resultElement = document.querySelector(".js-result");
+
+    resultElement.classList.remove("victory-animation", "loss", "tie");
+
+    void resultElement.offsetWidth;
+
+    resultElement.classList.add("victory-animation", "win");
   } else if (result === "אתה הפסדת") {
     score.losses += 1;
+    const resultElement = document.querySelector(".js-result");
+
+    resultElement.classList.remove("victory-animation", "win", "tie");
+
+    resultElement.classList.add("loss");
   } else if (result === "תיקו") {
     score.ties += 1;
+    const resultElement = document.querySelector(".js-result");
+
+    resultElement.classList.remove("victory-animation", "win", "loss");
+
+    resultElement.classList.add("tie");
   }
 
   localStorage.setItem("score", JSON.stringify(score));

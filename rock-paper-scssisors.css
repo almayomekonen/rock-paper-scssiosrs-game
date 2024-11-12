@@ -70,24 +70,23 @@ img {
 }
 
 .reset-btn {
-  background-color: white; /* Background color */
-  color: #007bff; /* Text color (make it a blue shade for contrast) */
-  padding: 10px 30px; /* Add some more padding for better spacing */
-  border: 2px solid #007bff; /* Add a border matching the text color */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-  font-weight: bold; /* Bold text */
-  font-size: 16px; /* Slightly larger text */
-  margin-top: 30px; /* Margin on top */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  background-color: white;
+  color: #007bff;
+  padding: 10px 30px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect */
 .reset-btn:hover {
-  background-color: #007bff; /* Blue background on hover */
-  color: white; /* White text color on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .reset-btn:hover {
@@ -171,4 +170,45 @@ img {
   .js-score {
     margin-top: 15px;
   }
+}
+
+.victory-animation {
+  animation: victory 1s ease-in-out;
+}
+
+@keyframes victory {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.win {
+  color: #28a745;
+  background-color: #d4edda;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loss {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tie {
+  color: #6c757d;
+  background-color: #e2e3e5;
+  padding: 10px;
+  border-radius: 5px;
 }

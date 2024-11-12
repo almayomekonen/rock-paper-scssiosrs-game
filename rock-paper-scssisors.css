@@ -212,3 +212,13 @@ img {
   padding: 10px;
   border-radius: 5px;
 }
+
+.rock-span {
+  color: #90ee90;
+}
+.paper-span {
+  color: #1e90ff;
+}
+.scissors-span {
+  color: #ffd700;
+}

@@ -70,17 +70,29 @@ img {
 }
 
 .reset-btn {
-  background-color: white;
-  padding: 8px 30px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 30px;
-  transition: 0.5s;
+  background-color: white; /* Background color */
+  color: #007bff; /* Text color (make it a blue shade for contrast) */
+  padding: 10px 30px; /* Add some more padding for better spacing */
+  border: 2px solid #007bff; /* Add a border matching the text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-weight: bold; /* Bold text */
+  font-size: 16px; /* Slightly larger text */
+  margin-top: 30px; /* Margin on top */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Hover effect */
+.reset-btn:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: white; /* White text color on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 .reset-btn:hover {
   background-color: yellow;
+  color: black;
 }
 
 .reset-btn:active {

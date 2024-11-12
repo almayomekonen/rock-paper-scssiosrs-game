@@ -11,35 +11,35 @@ function playGame(playerMove) {
 
   if (playerMove === "rock") {
     if (computerMove === "rock") {
-      result = "Tie";
+      result = "תיקו";
     } else if (computerMove === "paper") {
-      result = "You lose";
+      result = "אתה הפסדת";
     } else if (computerMove === "scissors") {
-      result = "You win";
+      result = "אתה ניצחת";
     }
   } else if (playerMove === "paper") {
     if (computerMove === "rock") {
-      result = "You win";
+      result = "אתה ניצחת";
     } else if (computerMove === "paper") {
-      result = "Tie";
+      result = "תיקו";
     } else if (computerMove === "scissors") {
-      result = "You lose";
+      result = "אתה הפסדת";
     }
   } else if (playerMove === "scissors") {
     if (computerMove === "rock") {
-      result = "You lose";
+      result = "אתה הפסדת";
     } else if (computerMove === "paper") {
-      result = "You win";
+      result = "אתה ניצחת";
     } else if (computerMove === "scissors") {
-      result = "Tie";
+      result = "תיקו";
     }
   }
 
-  if (result === "You win") {
+  if (result === "אתה ניצחת") {
     score.wins += 1;
-  } else if (result === "You lose") {
+  } else if (result === "אתה הפסדת") {
     score.losses += 1;
-  } else if (result === "Tie") {
+  } else if (result === "תיקו") {
     score.ties += 1;
   }
 
@@ -49,17 +49,17 @@ function playGame(playerMove) {
   document.querySelector(".js-result").innerHTML = result;
 
   document.querySelector(".js-picks").innerHTML = `
-  you 
+  אתה  
    <img class="small-image" src="./rock-paper-scssisors-images/${playerMove}-emoji.png" />
    <img class="small-image" src="./rock-paper-scssisors-images/${computerMove}-emoji.png" />
-  computer
+  מחשב
   `;
 }
 
 function updateScore() {
   document.querySelector(
     ".js-score"
-  ).innerHTML = `WINS: ${score.wins} . LOSSES: ${score.losses} . TIES: ${score.ties}`;
+  ).innerHTML = `נצחונות: ${score.wins} | הפסדים: ${score.losses} | שוויון: ${score.ties}`;
 }
 
 function pickComputerMove() {
